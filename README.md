@@ -1,25 +1,35 @@
 # Hardware Report Script
 
-Este proyecto genera un reporte detallado del sistema con información de hardware, software, memoria, disco, CPU y red.
+This project generates a detailed system report with information about hardware, software, memory, disk, CPU, and network.
 
-## Estructura del Proyecto
-- `collect_system_info.sh`: Script principal que coordina todos los módulos.
-- `modules/`: Contiene los scripts para recopilar información específica.
-  - `hardware_info.sh`: Información de hardware.
-  - `memory_info.sh`: Información de memoria.
-  - `disk_info.sh`: Información de disco.
-  - `cpu_info.sh`: Información de CPU.
-  - `network_info.sh`: Información de red.
-- `output/`: Carpeta donde se almacena el archivo de reporte.
-- `README.md`: Este archivo.
+## Project Structure
+- **`collect_system_info.sh`**: Main script that coordinates all modules.
+- **`modules/`**: Contains the scripts for specific information collection.
+  - **`hardware_info.sh`**: Hardware information.
+  - **`memory_info.sh`**: Memory information.
+  - **`disk_info.sh`**: Disk information.
+  - **`cpu_info.sh`**: CPU information.
+  - **`network_info.sh`**: Network information.
+- **`output/`**: Folder where the report file is stored.
+- **`README.md`**: This file.
 
-## Requisitos
+## Requirements
 - Bash
-- Herramientas estándar de Linux como `lshw`, `free`, `df`, `lscpu`, `ip`, `netstat`, etc.
+- Standard Linux tools like:
+  - `lshw`
+  - `free`
+  - `df`
+  - `lscpu`
+  - `ip`
+  - `netstat`
 
-## Uso
-1. Clona o descarga este proyecto.
-2. Da permisos de ejecución a los scripts:
+## Usage
+1. Clone or download this project.
+2. Grant execution permissions to the scripts:
    ```bash
    chmod +x collect_system_info.sh modules/*.sh
-```
+   ```
+3. Run:
+   ```bash
+   bash ./collect_system_info.sh
+   ```

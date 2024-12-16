@@ -115,4 +115,4 @@ Este proyecto genera un reporte detallado del sistema con información de hardwa
 2. Da permisos de ejecución a los scripts:
    ```bash
    chmod +x collect_system_info.sh modules/*.sh
-```
+   ```
